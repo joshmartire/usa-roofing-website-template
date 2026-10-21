@@ -1,0 +1,4 @@
+# Keep the demo copy on *.pages.dev out of search engines.
+# Only matches the pages.dev hostname, so a client's real domain is unaffected.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex

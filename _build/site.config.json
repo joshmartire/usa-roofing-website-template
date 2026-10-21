@@ -1,0 +1,145 @@
+{
+  "_README": "Edit these values for each client, then run: python3 _build/build.py && python3 _build/qa.py. Values marked SAMPLE must be replaced before launch. Keep demo_mode true until real client details are in; it adds noindex to every page and the yellow demo banner. accent: brand color #rrggbb (the build stops if it is too dark to read). logo: path to the client's logo, e.g. assets/img/client/logo.png (transparent PNG best); empty = built-in mark + name. services: remove any slug the client does not offer, then fix any sentences listed in _build/removed-service-mentions.txt. photos: the client's own job photos only (see _build/photos.py). intro: false turns the opening animation off; intro_scope 'all' plays it on whichever page a visitor lands on first, 'home' limits it to the home page. hero_video: false uses the still image only. estimator: see the _README inside it.",
+  "demo_mode": true,
+  "business_name": "Hammerline Roofing",
+  "legal_name": "Hammerline Roofing",
+  "short_tagline": "Roofing",
+  "region_label": "Middle Tennessee",
+  "province": "TN",
+  "country": "US",
+  "accent": "#ff4d2d",
+  "logo": "",
+  "intro": true,
+  "intro_scope": "all",
+  "hero_video": true,
+  "services": [
+    "roof-replacement",
+    "metal-roofing",
+    "flat-roofing",
+    "new-construction-roofing",
+    "commercial-roofing",
+    "roof-repair",
+    "storm-damage-repair",
+    "roof-inspections",
+    "roof-ventilation",
+    "gutters",
+    "soffit-fascia",
+    "skylights"
+  ],
+  "photos": [],
+  "domain": "https://rankboss-usa-roofing.pages.dev",
+  "base_path": "/",
+  "phone_display": "(615) 555-0147",
+  "phone_e164": "+16155550147",
+  "email": "info@example.com",
+  "address": null,
+  "_address_example": {
+    "street": "123 Example St",
+    "city": "Franklin",
+    "region": "TN",
+    "postal": "37064"
+  },
+  "hours": [
+    {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "label": "Monday to Friday",
+      "open": "07:30",
+      "close": "17:30"
+    },
+    {
+      "days": [
+        "Saturday"
+      ],
+      "label": "Saturday",
+      "open": "08:00",
+      "close": "13:00"
+    }
+  ],
+  "hours_note": "Estimates and inspections by appointment",
+  "cta_label": "Free Roof Quote",
+  "form_endpoint": "https://formsubmit.co/info@example.com",
+  "form_provider_name": "FormSubmit (formsubmit.co)",
+  "google_business_profile_url": "",
+  "social_profiles": [],
+  "google_site_verification": "",
+  "privacy_contact": "info@example.com",
+  "legal_jurisdiction": "Tennessee",
+  "policy_effective_date": "October 21, 2026",
+  "estimator": {
+    "_README": "Instant roof estimate (/roof-estimate/). Set the client's real numbers before launch: the tool shows a price RANGE for a standard asphalt shingle reshingle (tear-off of one layer, underlayment, eave protection, ridge vent, disposal). price_per_square = the client's installed price per roofing square (100 sq ft of roof surface) in USD. range_pct = how far the low/high ends sit from the middle (10 = -10%/+10%). waste_pct = extra material for cuts, hips, valleys and starter. extra_layer_per_square = added cost per square for each extra old layer torn off. overhang_ft = roof overhang added around the building outline from the map. minimum_job = smallest job the client takes. round_to = rounding for the displayed numbers. pitches: label, rise (x/12) and price_mult (labour premium for steep roofs). storeys: price_mult for height. map_center: where the map starts before an address is found. google_solar_api_key: OPTIONAL Google Maps Platform key with the Solar API enabled, restricted to the client's domain (HTTP referrer). When set, roof area and pitch are measured from Google's Solar data where available; otherwise the building outline + chosen pitch is used.",
+    "enabled": true,
+    "price_per_square": 525,
+    "range_pct": 10,
+    "waste_pct": 12,
+    "extra_layer_per_square": 55,
+    "overhang_ft": 1.25,
+    "minimum_job": 6500,
+    "round_to": 100,
+    "currency": "USD",
+    "pitches": [
+      {
+        "id": "low",
+        "label": "Low slope",
+        "hint": "Easy to walk on (about 3/12–4/12)",
+        "rise": 4,
+        "price_mult": 1.0
+      },
+      {
+        "id": "standard",
+        "label": "Standard",
+        "hint": "Most homes (about 5/12–7/12)",
+        "rise": 6,
+        "price_mult": 1.0
+      },
+      {
+        "id": "steep",
+        "label": "Steep",
+        "hint": "Hard to stand on (about 8/12–10/12)",
+        "rise": 9,
+        "price_mult": 1.12
+      },
+      {
+        "id": "very-steep",
+        "label": "Very steep",
+        "hint": "Tall, A-frame style (11/12 and up)",
+        "rise": 12,
+        "price_mult": 1.25
+      }
+    ],
+    "default_pitch": "standard",
+    "storeys": [
+      {
+        "id": "1",
+        "label": "1 story",
+        "price_mult": 1.0
+      },
+      {
+        "id": "2",
+        "label": "2 stories",
+        "price_mult": 1.06
+      },
+      {
+        "id": "3",
+        "label": "3+ stories",
+        "price_mult": 1.14
+      }
+    ],
+    "map_center": {
+      "lat": 35.9251,
+      "lng": -86.8689,
+      "zoom": 12
+    },
+    "search_bias": {
+      "lat": 35.86,
+      "lng": -86.85,
+      "country": "us"
+    },
+    "google_solar_api_key": ""
+  }
+}
