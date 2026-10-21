@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /thank-you/
 
-Sitemap: https://rankboss-usa-roofing.pages.dev/sitemap.xml
+Sitemap: https://usaroofingdemo.getrankboss.com/sitemap.xml
